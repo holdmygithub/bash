@@ -5,12 +5,12 @@ while true; do
  if [[ -d "$(ls -rt | tail -n 1)" ]]; then
   cd "$(ls -rt | tail -n 1)"
  elif [[ -f "$(ls -rt | tail -n 1)" ]]; then 
-  echo \" "$(ls -rt | tail -n 1)" \" is the last modified file\!
+  echo "Last modified file: $(pwd)/$(ls -rt | tail -n 1)"
   cd "$here"
   return
  else
   cd ..
-  echo \" "$(ls -rt | tail -n 1)" \" is an empty directory and is the last modified\!
+  echo "Last modified empty directory: $(pwd)/$(ls -rt | tail -n 1)"
   cd "$here"
   return
  fi
