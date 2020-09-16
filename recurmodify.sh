@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-lastmodfile(){
+lastmodf(){
 here="$(pwd)"
 while true; do
  if [[ -d "$(ls -rt | tail -n 1)" ]]; then
