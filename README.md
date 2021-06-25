@@ -1,4 +1,4 @@
-Find the last modified file or empyt directory recursively from the current directory.
+Find the last modified file or empty directory recursively from the current directory.
 
 INSTALLATION:
 1) Clone the .sh file
